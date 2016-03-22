@@ -1,0 +1,4 @@
+SAB_VER=1.0.0
+SAB_UID=10003
+SAB_GID=10000
+DATADIR=/mediabox/scratch/sabnzbd

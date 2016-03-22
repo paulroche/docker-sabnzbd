@@ -1,0 +1,14 @@
+---
+version: '2'
+services:
+  sabnzbd:
+    env_file: vars
+    build: .
+    image: 'paulroche/sabnzbd'
+    container_name: sabnzbd
+    cpuset: "0"
+    restart: always
+    ports:
+      - "9090:9090"
+    volumes:
+      - '/mediabox:/mediabox'
